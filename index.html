@@ -10,6 +10,15 @@
     <meta property="og:locale" content="nl_NL">
     <meta property="og:title" content="Riveros Autojschool | Rijlessen in de regio">
     <meta property="og:description" content="Autorijlessen en proeflessen in Eerbeek, Hall, Brummen, Voorst en omgeving.">
+    <script>
+        (function() {
+            var navigatie = performance.getEntriesByType('navigation')[0];
+            if (navigatie && navigatie.type === 'reload' && 'scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+            }
+        })();
+    </script>
+    <link rel="preload" href="img/nuevo logo.png" as="image" fetchpriority="high">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" sizes="128x128" href="img/Favicon.png?v=2">
     <title>Riveros Autojschool | Rijlessen in de regio</title>
@@ -75,7 +84,7 @@
             <div class="informacion-lista info-columna">
                 <div class="servicio servicio-principal">
                     <h3>Introductieles gratis</h3>
-                    <img src="img/img__volante-removebg-preview.png" alt="Gratis introductieles in een lesauto">
+                    <img src="img/img__volante-removebg-preview.png" alt="Gratis introductieles in een lesauto" loading="lazy" decoding="async">
                 </div>
                 <div class="servicio">
                     <p>Vanaf 16,5 jaar mag je beginnen met rijlessen. Vanaf je 17e mag je met je rijbewijs onder begeleiding rijden. Zo doe je rijervaring op en ben je voorbereid om vanaf je 18e zelfstandig de weg op te gaan. Neem contact met ons op via het formulier op onze website. We wensen je een fijne dag!</p>
@@ -244,7 +253,7 @@
     </section>
     <footer>
         <div class="container">
-            <img src="img/nuevo logo.png" alt="Riveros Autorijschool" class="footer-logo">
+            <img src="img/nuevo logo.png" alt="Riveros Autorijschool" class="footer-logo" width="351" height="99" loading="lazy" decoding="async">
             <div class="footer-info">
                 <div class="footer-card">
                     <h3 class="footer-heading">
